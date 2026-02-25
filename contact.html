@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Health Promotion Consultant portfolio site">
+  <title>Contact • Ann K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <b>Ann K</b>
+            <span>Health Promotion Consultant • IMG • Workshop Facilitator</span>
+          </div>
+        </a>
+
+        <nav class="menu" aria-label="Primary">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="workshops.html">Workshops</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav class="cta" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker"><span class="dot"></span><span>Contact • bookings • quick turnaround</span></div>
+        <h1>Contact</h1>
+        <p class="lede">Tell me about your cohort. I’ll suggest a best‑fit session plan and next steps.</p>
+        <div class="badge-row">
+          <span class="badge">Virtual or in-person</span>
+          <span class="badge">ESL-friendly</span>
+          <span class="badge">Interpreter-friendly pacing</span>
+          <span class="badge">Slides + handouts included</span>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Fast booking path</h3>
+          <p>Most teams start with a <b>pilot workshop</b> (60–90 minutes). After feedback is collected, it’s easy to expand to a series.</p>
+          <div class="meta"><span>Pilot → Series</span><span>Optional evaluation snapshot</span><span>Low lift for staff</span></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Send an inquiry</h3>
+          <p>This form opens your email with a pre-filled message (no website backend needed).</p>
+
+          <form id="contactForm" class="form" data-to="your@email.com">
+            <div class="inline">
+              <div>
+                <label for="name">Your name</label>
+                <input id="name" name="name" autocomplete="name" placeholder="Full name">
+              </div>
+              <div>
+                <label for="email">Your email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="name@organization.org">
+              </div>
+            </div>
+
+            <div class="inline">
+              <div>
+                <label for="org">Organization</label>
+                <input id="org" name="org" autocomplete="organization" placeholder="Non-profit / CHC / program">
+              </div>
+              <div>
+                <label for="role">Role</label>
+                <input id="role" name="role" placeholder="Program Manager, Coordinator, etc.">
+              </div>
+            </div>
+
+            <div>
+              <label for="topic">What are you looking for?</label>
+              <input id="topic" name="topic" placeholder="Pilot workshop / series / wellness day">
+            </div>
+
+            <div>
+              <label for="message">Brief details (optional)</label>
+              <textarea id="message" name="message" placeholder="Audience, cohort size, goals, delivery preference, interpreter/ESL needs..."></textarea>
+            </div>
+
+            <button class="button primary" type="submit">Open email draft</button>
+            <p class="small">Update the recipient email in <span style="font-family:var(--mono)">contact.html</span> (data-to).</p>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>What to include (so we can move fast)</h2>
+    <p class="sub">The more specific your cohort details, the faster I can tailor.</p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Audience & cohort</h3>
+        <ul class="list">
+          <li>Audience type</li>
+          <li>Cohort size</li>
+          <li>Interpreter/ESL needs</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Goals</h3>
+        <ul class="list">
+          <li>What outcomes matter most?</li>
+          <li>Common barriers</li>
+          <li>Any sensitive topics to avoid</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Logistics</h3>
+        <ul class="list">
+          <li>Virtual vs in-person</li>
+          <li>Time window</li>
+          <li>Accessibility needs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:14px">
+      Prefer a quick call? Share two time windows and I’ll confirm a 10–15 minute slot.
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div><b>Ann K</b> — culturally safe, trauma-informed health promotion & mental wellbeing workshops.</div>
+          <div class="small">Serving GTA + Ontario (in-person & virtual). ESL-friendly delivery available.</div>
+        </div>
+        <div style="text-align:right">
+          <small>© <span id="y"></span> • Last updated: <span id="d"></span></small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const now = new Date();
+    document.getElementById('d').textContent = months[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

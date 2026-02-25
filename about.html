@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Health Promotion Consultant portfolio site">
+  <title>About • Ann K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <b>Ann K</b>
+            <span>Health Promotion Consultant • IMG • Workshop Facilitator</span>
+          </div>
+        </a>
+
+        <nav class="menu" aria-label="Primary">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="workshops.html">Workshops</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav class="cta" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker"><span class="dot"></span><span>About • approach • values</span></div>
+        <h1>About Ann</h1>
+        <p class="lede">
+          I’m an International Medical Graduate and Health Promotion Consultant with 8+ years of healthcare experience and
+          10 years building and running a wellness company. I specialize in community-based education that is practical,
+          respectful, and designed for real-world constraints.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="contact.html">Let’s talk about your cohort</a>
+          <a class="button" href="workshops.html">See workshops</a>
+        </div>
+      </div>
+      <aside>
+        <div class="card">
+          <h3>Where I’m strongest</h3>
+          <p>Programs supporting people navigating major life transitions and complex barriers.</p>
+          <div class="meta">
+            <span>Newcomers & ESL</span>
+            <span>Disability supports</span>
+            <span>Racialized communities</span>
+            <span>Older adult women</span>
+            <span>Young adults</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>My approach</h2>
+    <p class="sub">Warm, structured facilitation that is culturally safe, trauma-informed, and built for action.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Trauma‑informed facilitation</h3>
+        <p>I prioritize psychological safety, consent-based participation, and strategies that don’t require people to “push through.”</p>
+        <ul class="list">
+          <li>Choice-based activities</li>
+          <li>Non-judgmental language</li>
+          <li>Grounding + regulation tools</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Culturally safe delivery</h3>
+        <p>I adapt content to community context and lived experience—without assumptions and without blame.</p>
+        <ul class="list">
+          <li>Culture-aware examples</li>
+          <li>Respectful discussion norms</li>
+          <li>Anti-oppression lens</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h3>Accessibility matters</h3>
+      <p>Sessions are designed for mixed literacy and ESL contexts. I use clear visuals, short steps, repetition, and gentle pacing. Interpreter-friendly delivery is available.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Selected engagements</h2>
+    <p class="sub">Examples of programs I’ve supported (add dates/outcomes as you prefer).</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Learning Enrichment Foundation (LEF)</h3>
+        <p>Workshops delivered across Abilities Workforce, LINC, Launch Your Career, and Wellness Network programming.</p>
+      </div>
+      <div class="card">
+        <h3>ACCES Employment</h3>
+        <p>Supported business owner education and mental health discussions, including early COVID panel participation.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h3>Proof boosts trust</h3>
+      <p class="quote">“Add 1–2 short testimonials here. Even one sentence helps program teams approve faster.”</p>
+      <p class="small">Tip: If you don’t have written testimonials yet, request a 1‑line feedback quote from a program lead after your next session.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div><b>Ann K</b> — culturally safe, trauma-informed health promotion & mental wellbeing workshops.</div>
+          <div class="small">Serving GTA + Ontario (in-person & virtual). ESL-friendly delivery available.</div>
+        </div>
+        <div style="text-align:right">
+          <small>© <span id="y"></span> • Last updated: <span id="d"></span></small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const now = new Date();
+    document.getElementById('d').textContent = months[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
