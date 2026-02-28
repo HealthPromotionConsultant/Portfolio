@@ -236,3 +236,13 @@ input:focus, textarea:focus{
   display:flex; gap: 12px; flex-wrap:wrap;
 }
 .inline > div{flex:1; min-width: 210px}
+.testimonial .quote {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.testimonial .byline {
+  margin: 0;
+  font-size: 0.95rem;
+}
